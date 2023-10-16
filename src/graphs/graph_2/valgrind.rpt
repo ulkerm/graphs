@@ -1,0 +1,333 @@
+==463== Memcheck, a memory error detector
+==463== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==463== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==463== Command: ./graph
+==463== Parent PID: 1
+==463== 
+==463== Conditional jump or move depends on uninitialised value(s)
+==463==    at 0x109377: graph_get_degree (graph_algs.c:36)
+==463==    by 0x1093DB: graph_min_degree (graph_algs.c:53)
+==463==    by 0x109AEC: main (main.c:34)
+==463== 
+==463== Conditional jump or move depends on uninitialised value(s)
+==463==    at 0x109385: graph_get_degree (graph_algs.c:39)
+==463==    by 0x1093DB: graph_min_degree (graph_algs.c:53)
+==463==    by 0x109AEC: main (main.c:34)
+==463== 
+==463== Conditional jump or move depends on uninitialised value(s)
+==463==    at 0x109377: graph_get_degree (graph_algs.c:36)
+==463==    by 0x1093FE: graph_max_degree (graph_algs.c:57)
+==463==    by 0x109B0E: main (main.c:35)
+==463== 
+==463== Conditional jump or move depends on uninitialised value(s)
+==463==    at 0x109385: graph_get_degree (graph_algs.c:39)
+==463==    by 0x1093FE: graph_max_degree (graph_algs.c:57)
+==463==    by 0x109B0E: main (main.c:35)
+==463== 
+==463== Conditional jump or move depends on uninitialised value(s)
+==463==    at 0x48B9D08: __printf_fp_l (printf_fp.c:396)
+==463==    by 0x48D59AC: __printf_fp_spec (vfprintf-internal.c:354)
+==463==    by 0x48D59AC: __vfprintf_internal (vfprintf-internal.c:1558)
+==463==    by 0x48BF81E: printf (printf.c:33)
+==463==    by 0x109B4E: main (main.c:36)
+==463== 
+==463== Conditional jump or move depends on uninitialised value(s)
+==463==    at 0x48B9D22: __printf_fp_l (printf_fp.c:396)
+==463==    by 0x48D59AC: __printf_fp_spec (vfprintf-internal.c:354)
+==463==    by 0x48D59AC: __vfprintf_internal (vfprintf-internal.c:1558)
+==463==    by 0x48BF81E: printf (printf.c:33)
+==463==    by 0x109B4E: main (main.c:36)
+==463== 
+==463== Conditional jump or move depends on uninitialised value(s)
+==463==    at 0x48B555A: __mpn_extract_double (dbl2mpn.c:56)
+==463==    by 0x48BA016: __printf_fp_l (printf_fp.c:396)
+==463==    by 0x48D59AC: __printf_fp_spec (vfprintf-internal.c:354)
+==463==    by 0x48D59AC: __vfprintf_internal (vfprintf-internal.c:1558)
+==463==    by 0x48BF81E: printf (printf.c:33)
+==463==    by 0x109B4E: main (main.c:36)
+==463== 
+==463== Conditional jump or move depends on uninitialised value(s)
+==463==    at 0x48BA066: __printf_fp_l (printf_fp.c:437)
+==463==    by 0x48D59AC: __printf_fp_spec (vfprintf-internal.c:354)
+==463==    by 0x48D59AC: __vfprintf_internal (vfprintf-internal.c:1558)
+==463==    by 0x48BF81E: printf (printf.c:33)
+==463==    by 0x109B4E: main (main.c:36)
+==463== 
+==463== Conditional jump or move depends on uninitialised value(s)
+==463==    at 0x48BA089: __printf_fp_l (printf_fp.c:437)
+==463==    by 0x48D59AC: __printf_fp_spec (vfprintf-internal.c:354)
+==463==    by 0x48D59AC: __vfprintf_internal (vfprintf-internal.c:1558)
+==463==    by 0x48BF81E: printf (printf.c:33)
+==463==    by 0x109B4E: main (main.c:36)
+==463== 
+==463== Use of uninitialised value of size 8
+==463==    at 0x48BA954: __printf_fp_l (printf_fp.c:437)
+==463==    by 0x48D59AC: __printf_fp_spec (vfprintf-internal.c:354)
+==463==    by 0x48D59AC: __vfprintf_internal (vfprintf-internal.c:1558)
+==463==    by 0x48BF81E: printf (printf.c:33)
+==463==    by 0x109B4E: main (main.c:36)
+==463== 
+==463== Conditional jump or move depends on uninitialised value(s)
+==463==    at 0x48BA0B9: __printf_fp_l (printf_fp.c:438)
+==463==    by 0x48D59AC: __printf_fp_spec (vfprintf-internal.c:354)
+==463==    by 0x48D59AC: __vfprintf_internal (vfprintf-internal.c:1558)
+==463==    by 0x48BF81E: printf (printf.c:33)
+==463==    by 0x109B4E: main (main.c:36)
+==463== 
+==463== Conditional jump or move depends on uninitialised value(s)
+==463==    at 0x48BA0DC: __printf_fp_l (printf_fp.c:438)
+==463==    by 0x48D59AC: __printf_fp_spec (vfprintf-internal.c:354)
+==463==    by 0x48D59AC: __vfprintf_internal (vfprintf-internal.c:1558)
+==463==    by 0x48BF81E: printf (printf.c:33)
+==463==    by 0x109B4E: main (main.c:36)
+==463== 
+==463== Use of uninitialised value of size 8
+==463==    at 0x48BA0DE: __printf_fp_l (printf_fp.c:438)
+==463==    by 0x48D59AC: __printf_fp_spec (vfprintf-internal.c:354)
+==463==    by 0x48D59AC: __vfprintf_internal (vfprintf-internal.c:1558)
+==463==    by 0x48BF81E: printf (printf.c:33)
+==463==    by 0x109B4E: main (main.c:36)
+==463== 
+==463== Conditional jump or move depends on uninitialised value(s)
+==463==    at 0x48BA107: __printf_fp_l (printf_fp.c:439)
+==463==    by 0x48D59AC: __printf_fp_spec (vfprintf-internal.c:354)
+==463==    by 0x48D59AC: __vfprintf_internal (vfprintf-internal.c:1558)
+==463==    by 0x48BF81E: printf (printf.c:33)
+==463==    by 0x109B4E: main (main.c:36)
+==463== 
+==463== Conditional jump or move depends on uninitialised value(s)
+==463==    at 0x48BA12C: __printf_fp_l (printf_fp.c:439)
+==463==    by 0x48D59AC: __printf_fp_spec (vfprintf-internal.c:354)
+==463==    by 0x48D59AC: __vfprintf_internal (vfprintf-internal.c:1558)
+==463==    by 0x48BF81E: printf (printf.c:33)
+==463==    by 0x109B4E: main (main.c:36)
+==463== 
+==463== Use of uninitialised value of size 8
+==463==    at 0x48BA12E: __printf_fp_l (printf_fp.c:439)
+==463==    by 0x48D59AC: __printf_fp_spec (vfprintf-internal.c:354)
+==463==    by 0x48D59AC: __vfprintf_internal (vfprintf-internal.c:1558)
+==463==    by 0x48BF81E: printf (printf.c:33)
+==463==    by 0x109B4E: main (main.c:36)
+==463== 
+==463== Conditional jump or move depends on uninitialised value(s)
+==463==    at 0x48BA14C: __printf_fp_l (printf_fp.c:446)
+==463==    by 0x48D59AC: __printf_fp_spec (vfprintf-internal.c:354)
+==463==    by 0x48D59AC: __vfprintf_internal (vfprintf-internal.c:1558)
+==463==    by 0x48BF81E: printf (printf.c:33)
+==463==    by 0x109B4E: main (main.c:36)
+==463== 
+==463== Conditional jump or move depends on uninitialised value(s)
+==463==    at 0x48BB1ED: __printf_fp_l (printf_fp.c:649)
+==463==    by 0x48D59AC: __printf_fp_spec (vfprintf-internal.c:354)
+==463==    by 0x48D59AC: __vfprintf_internal (vfprintf-internal.c:1558)
+==463==    by 0x48BF81E: printf (printf.c:33)
+==463==    by 0x109B4E: main (main.c:36)
+==463== 
+==463== Use of uninitialised value of size 8
+==463==    at 0x48BB1FC: __printf_fp_l (printf_fp.c:825)
+==463==    by 0x48D59AC: __printf_fp_spec (vfprintf-internal.c:354)
+==463==    by 0x48D59AC: __vfprintf_internal (vfprintf-internal.c:1558)
+==463==    by 0x48BF81E: printf (printf.c:33)
+==463==    by 0x109B4E: main (main.c:36)
+==463== 
+==463== Use of uninitialised value of size 8
+==463==    at 0x48B3DBC: __mpn_lshift (lshift.S:59)
+==463==    by 0x48BB200: __printf_fp_l (printf_fp.c:825)
+==463==    by 0x48D59AC: __printf_fp_spec (vfprintf-internal.c:354)
+==463==    by 0x48D59AC: __vfprintf_internal (vfprintf-internal.c:1558)
+==463==    by 0x48BF81E: printf (printf.c:33)
+==463==    by 0x109B4E: main (main.c:36)
+==463== 
+==463== Use of uninitialised value of size 8
+==463==    at 0x48B3DBF: __mpn_lshift (lshift.S:60)
+==463==    by 0x48BB200: __printf_fp_l (printf_fp.c:825)
+==463==    by 0x48D59AC: __printf_fp_spec (vfprintf-internal.c:354)
+==463==    by 0x48D59AC: __vfprintf_internal (vfprintf-internal.c:1558)
+==463==    by 0x48BF81E: printf (printf.c:33)
+==463==    by 0x109B4E: main (main.c:36)
+==463== 
+==463== Use of uninitialised value of size 8
+==463==    at 0x48BB21D: __printf_fp_l (printf_fp.c:826)
+==463==    by 0x48D59AC: __printf_fp_spec (vfprintf-internal.c:354)
+==463==    by 0x48D59AC: __vfprintf_internal (vfprintf-internal.c:1558)
+==463==    by 0x48BF81E: printf (printf.c:33)
+==463==    by 0x109B4E: main (main.c:36)
+==463== 
+==463== Use of uninitialised value of size 8
+==463==    at 0x48B9609: hack_digit (printf_fp.c:177)
+==463==    by 0x48BA60B: __printf_fp_l (printf_fp.c:942)
+==463==    by 0x48D59AC: __printf_fp_spec (vfprintf-internal.c:354)
+==463==    by 0x48D59AC: __vfprintf_internal (vfprintf-internal.c:1558)
+==463==    by 0x48BF81E: printf (printf.c:33)
+==463==    by 0x109B4E: main (main.c:36)
+==463== 
+==463== Use of uninitialised value of size 8
+==463==    at 0x48B4478: __mpn_mul_1 (mul_1.S:36)
+==463==    by 0x48B9610: hack_digit (printf_fp.c:178)
+==463==    by 0x48BA60B: __printf_fp_l (printf_fp.c:942)
+==463==    by 0x48D59AC: __printf_fp_spec (vfprintf-internal.c:354)
+==463==    by 0x48D59AC: __vfprintf_internal (vfprintf-internal.c:1558)
+==463==    by 0x48BF81E: printf (printf.c:33)
+==463==    by 0x109B4E: main (main.c:36)
+==463== 
+==463== Use of uninitialised value of size 8
+==463==    at 0x48B449C: __mpn_mul_1 (mul_1.S:52)
+==463==    by 0x48B9610: hack_digit (printf_fp.c:178)
+==463==    by 0x48BA60B: __printf_fp_l (printf_fp.c:942)
+==463==    by 0x48D59AC: __printf_fp_spec (vfprintf-internal.c:354)
+==463==    by 0x48D59AC: __vfprintf_internal (vfprintf-internal.c:1558)
+==463==    by 0x48BF81E: printf (printf.c:33)
+==463==    by 0x109B4E: main (main.c:36)
+==463== 
+==463== Use of uninitialised value of size 8
+==463==    at 0x48B9609: hack_digit (printf_fp.c:177)
+==463==    by 0x48BA6B3: __printf_fp_l (printf_fp.c:966)
+==463==    by 0x48D59AC: __printf_fp_spec (vfprintf-internal.c:354)
+==463==    by 0x48D59AC: __vfprintf_internal (vfprintf-internal.c:1558)
+==463==    by 0x48BF81E: printf (printf.c:33)
+==463==    by 0x109B4E: main (main.c:36)
+==463== 
+==463== Use of uninitialised value of size 8
+==463==    at 0x48B4478: __mpn_mul_1 (mul_1.S:36)
+==463==    by 0x48B9610: hack_digit (printf_fp.c:178)
+==463==    by 0x48BA6B3: __printf_fp_l (printf_fp.c:966)
+==463==    by 0x48D59AC: __printf_fp_spec (vfprintf-internal.c:354)
+==463==    by 0x48D59AC: __vfprintf_internal (vfprintf-internal.c:1558)
+==463==    by 0x48BF81E: printf (printf.c:33)
+==463==    by 0x109B4E: main (main.c:36)
+==463== 
+==463== Use of uninitialised value of size 8
+==463==    at 0x48B449C: __mpn_mul_1 (mul_1.S:52)
+==463==    by 0x48B9610: hack_digit (printf_fp.c:178)
+==463==    by 0x48BA6B3: __printf_fp_l (printf_fp.c:966)
+==463==    by 0x48D59AC: __printf_fp_spec (vfprintf-internal.c:354)
+==463==    by 0x48D59AC: __vfprintf_internal (vfprintf-internal.c:1558)
+==463==    by 0x48BF81E: printf (printf.c:33)
+==463==    by 0x109B4E: main (main.c:36)
+==463== 
+==463== Conditional jump or move depends on uninitialised value(s)
+==463==    at 0x48BAA00: __printf_fp_l (printf_fp.c:978)
+==463==    by 0x48D59AC: __printf_fp_spec (vfprintf-internal.c:354)
+==463==    by 0x48D59AC: __vfprintf_internal (vfprintf-internal.c:1558)
+==463==    by 0x48BF81E: printf (printf.c:33)
+==463==    by 0x109B4E: main (main.c:36)
+==463== 
+==463== Use of uninitialised value of size 8
+==463==    at 0x48B9609: hack_digit (printf_fp.c:177)
+==463==    by 0x48BAA1A: __printf_fp_l (printf_fp.c:979)
+==463==    by 0x48D59AC: __printf_fp_spec (vfprintf-internal.c:354)
+==463==    by 0x48D59AC: __vfprintf_internal (vfprintf-internal.c:1558)
+==463==    by 0x48BF81E: printf (printf.c:33)
+==463==    by 0x109B4E: main (main.c:36)
+==463== 
+==463== Use of uninitialised value of size 8
+==463==    at 0x48B4478: __mpn_mul_1 (mul_1.S:36)
+==463==    by 0x48B9610: hack_digit (printf_fp.c:178)
+==463==    by 0x48BAA1A: __printf_fp_l (printf_fp.c:979)
+==463==    by 0x48D59AC: __printf_fp_spec (vfprintf-internal.c:354)
+==463==    by 0x48D59AC: __vfprintf_internal (vfprintf-internal.c:1558)
+==463==    by 0x48BF81E: printf (printf.c:33)
+==463==    by 0x109B4E: main (main.c:36)
+==463== 
+==463== Use of uninitialised value of size 8
+==463==    at 0x48B449C: __mpn_mul_1 (mul_1.S:52)
+==463==    by 0x48B9610: hack_digit (printf_fp.c:178)
+==463==    by 0x48BAA1A: __printf_fp_l (printf_fp.c:979)
+==463==    by 0x48D59AC: __printf_fp_spec (vfprintf-internal.c:354)
+==463==    by 0x48D59AC: __vfprintf_internal (vfprintf-internal.c:1558)
+==463==    by 0x48BF81E: printf (printf.c:33)
+==463==    by 0x109B4E: main (main.c:36)
+==463== 
+==463== Conditional jump or move depends on uninitialised value(s)
+==463==    at 0x48BAA3A: __printf_fp_l (printf_fp.c:981)
+==463==    by 0x48D59AC: __printf_fp_spec (vfprintf-internal.c:354)
+==463==    by 0x48D59AC: __vfprintf_internal (vfprintf-internal.c:1558)
+==463==    by 0x48BF81E: printf (printf.c:33)
+==463==    by 0x109B4E: main (main.c:36)
+==463== 
+==463== Use of uninitialised value of size 8
+==463==    at 0x48BAA6E: __printf_fp_l (printf_fp.c:991)
+==463==    by 0x48D59AC: __printf_fp_spec (vfprintf-internal.c:354)
+==463==    by 0x48D59AC: __vfprintf_internal (vfprintf-internal.c:1558)
+==463==    by 0x48BF81E: printf (printf.c:33)
+==463==    by 0x109B4E: main (main.c:36)
+==463== 
+==463== Conditional jump or move depends on uninitialised value(s)
+==463==    at 0x48BAA74: __printf_fp_l (printf_fp.c:991)
+==463==    by 0x48D59AC: __printf_fp_spec (vfprintf-internal.c:354)
+==463==    by 0x48D59AC: __vfprintf_internal (vfprintf-internal.c:1558)
+==463==    by 0x48BF81E: printf (printf.c:33)
+==463==    by 0x109B4E: main (main.c:36)
+==463== 
+==463== Conditional jump or move depends on uninitialised value(s)
+==463==    at 0x48BAAA8: round_away (rounding-mode.h:52)
+==463==    by 0x48BAAA8: __printf_fp_l (printf_fp.c:998)
+==463==    by 0x48D59AC: __printf_fp_spec (vfprintf-internal.c:354)
+==463==    by 0x48D59AC: __vfprintf_internal (vfprintf-internal.c:1558)
+==463==    by 0x48BF81E: printf (printf.c:33)
+==463==    by 0x109B4E: main (main.c:36)
+==463== 
+==463== Conditional jump or move depends on uninitialised value(s)
+==463==    at 0x48BAD25: __printf_fp_l (printf_fp.c:1166)
+==463==    by 0x48D59AC: __printf_fp_spec (vfprintf-internal.c:354)
+==463==    by 0x48D59AC: __vfprintf_internal (vfprintf-internal.c:1558)
+==463==    by 0x48BF81E: printf (printf.c:33)
+==463==    by 0x109B4E: main (main.c:36)
+==463== 
+==463== Conditional jump or move depends on uninitialised value(s)
+==463==    at 0x48BAF65: __printf_fp_l (printf_fp.c:1228)
+==463==    by 0x48D59AC: __printf_fp_spec (vfprintf-internal.c:354)
+==463==    by 0x48D59AC: __vfprintf_internal (vfprintf-internal.c:1558)
+==463==    by 0x48BF81E: printf (printf.c:33)
+==463==    by 0x109B4E: main (main.c:36)
+==463== 
+==463== Conditional jump or move depends on uninitialised value(s)
+==463==    at 0x48BAF4B: __printf_fp_l (printf_fp.c:1230)
+==463==    by 0x48D59AC: __printf_fp_spec (vfprintf-internal.c:354)
+==463==    by 0x48D59AC: __vfprintf_internal (vfprintf-internal.c:1558)
+==463==    by 0x48BF81E: printf (printf.c:33)
+==463==    by 0x109B4E: main (main.c:36)
+==463== 
+==463== Conditional jump or move depends on uninitialised value(s)
+==463==    at 0x48EBE9D: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:782)
+==463==    by 0x48BB861: __printf_fp_l (printf_fp.c:1254)
+==463==    by 0x48D59AC: __printf_fp_spec (vfprintf-internal.c:354)
+==463==    by 0x48D59AC: __vfprintf_internal (vfprintf-internal.c:1558)
+==463==    by 0x48BF81E: printf (printf.c:33)
+==463==    by 0x109B4E: main (main.c:36)
+==463== 
+==463== Syscall param write(buf) points to uninitialised byte(s)
+==463==    at 0x4973A37: write (write.c:26)
+==463==    by 0x48E9F6C: _IO_file_write@@GLIBC_2.2.5 (fileops.c:1180)
+==463==    by 0x48EBA60: new_do_write (fileops.c:448)
+==463==    by 0x48EBA60: _IO_new_do_write (fileops.c:425)
+==463==    by 0x48EBA60: _IO_do_write@@GLIBC_2.2.5 (fileops.c:422)
+==463==    by 0x48EA754: _IO_new_file_xsputn (fileops.c:1243)
+==463==    by 0x48EA754: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+==463==    by 0x48D5049: outstring_func (vfprintf-internal.c:239)
+==463==    by 0x48D5049: __vfprintf_internal (vfprintf-internal.c:1593)
+==463==    by 0x48BF81E: printf (printf.c:33)
+==463==    by 0x109B4E: main (main.c:36)
+==463==  Address 0x4a8a1a0 is 0 bytes inside a block of size 1,024 alloc'd
+==463==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==463==    by 0x48DDC23: _IO_file_doallocate (filedoalloc.c:101)
+==463==    by 0x48ECD5F: _IO_doallocbuf (genops.c:347)
+==463==    by 0x48EBFDF: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+==463==    by 0x48EA754: _IO_new_file_xsputn (fileops.c:1243)
+==463==    by 0x48EA754: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+==463==    by 0x48D41CC: outstring_func (vfprintf-internal.c:239)
+==463==    by 0x48D41CC: __vfprintf_internal (vfprintf-internal.c:1263)
+==463==    by 0x48BF81E: printf (printf.c:33)
+==463==    by 0x109854: graph_print (graph_m.c:67)
+==463==    by 0x109AA9: main (main.c:28)
+==463== 
+==463== 
+==463== HEAP SUMMARY:
+==463==     in use at exit: 0 bytes in 0 blocks
+==463==   total heap usage: 3 allocs, 3 frees, 1,600 bytes allocated
+==463== 
+==463== All heap blocks were freed -- no leaks are possible
+==463== 
+==463== Use --track-origins=yes to see where uninitialised values come from
+==463== For lists of detected and suppressed errors, rerun with: -s
+==463== ERROR SUMMARY: 60 errors from 41 contexts (suppressed: 0 from 0)
